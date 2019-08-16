@@ -40,7 +40,7 @@ class Borg:
 class Base_Page(Borg,unittest.TestCase):
     "Page class that all page models can inherit from"
 
-    def __init__(self,base_url='http://qxf2.com/',trailing_slash_flag=True):
+    def __init__(self,base_url='{{cookiecutter.project_url}}',trailing_slash_flag=True):
         "Constructor"
         Borg.__init__(self)
         if self.is_first_time():
