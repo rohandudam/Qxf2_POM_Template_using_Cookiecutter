@@ -15,7 +15,7 @@ import conf.testrail_caseid_conf as testrail_file
 def test_check_current_url(base_url,browser,browser_version,os_version,os_name,remote_flag,testrail_flag,tesults_flag,test_run_id,remote_project_name,remote_build_name):
     "Run the test"
     try:
-        #Initalize flags for tests summary
+        #Initialize flags for tests summary
         expected_pass = 0
         actual_pass = -1
 
@@ -31,17 +31,17 @@ def test_check_current_url(base_url,browser,browser_version,os_version,os_name,r
 
         #4. Verify current url
         current_url = test_obj.get_URL() 
-        if current_url == url:
+        result_flag = False
+        print("url:",current_url)
+        if url in current_url:
             result_flag = True
-        else:
-            remote_flag = False
 
         test_obj.log_result(result_flag,
                             positive="Landed on correct URL: %s\n"%url,
                             negative="Failed to land on correct url: %s \n Landed at url: %s"%(url,current_url))
         test_obj.write('Script duration: %d seconds\n'%(int(time.time()-start_time)))
         
-        #13. Print out the results
+        #5. Print out the results
         test_obj.write_test_summary()
 
         #Teardown

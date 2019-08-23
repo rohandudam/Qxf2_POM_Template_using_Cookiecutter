@@ -8,10 +8,15 @@ import conf.locators_conf as locators
 from utils.Wrapit import Wrapit
 
 
-class {{cookiecutter.page_object_class_name}}():
+class {{cookiecutter.page_object_class_name}}(Base_Page):
     "Page Object for the {{cookiecutter.page_object_class_name}} class"
 
     #locators
+
+    def start(self):
+        "Use this method to go to specific URL -- if needed"
+        url = ''
+        self.open(url)
     
     @Wrapit._exceptionHandler
     def get_URL(self):
