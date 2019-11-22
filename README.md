@@ -39,13 +39,13 @@ __Note:__ We recommand to use command prompt for running these commands (Avoid u
 
 2. After above command is executed following parameters will be prompted to be filled :
 
-	1. directory_name [Qxf2-POM]: [<test-qxf2>] ( Mention the project Directory name)  
+	1. directory_name [Qxf2-POM]: [test_qxf2] ( Mention the project Directory name)  
 
-	2. project_url [https://www.qxf2.com]: [<https://www.google.co.in>] (Mention the project URL which you want to jumpon)
+	2. project_url [https://www.qxf2.com] : [https://www.google.co.in] (Mention the project URL which you want to jumpon)
 
-	3. page_object_name [tutorial_main_page]: [<main_page>] (Mention the first page object name)
+	3. page_object_name [tutorial_main_page]: [main_page] (Mention the first page object name)
 
-	4. page_object_class_name [Tutorial_Main_Page]: [<Main_Page>] (Mention the same page object name but start with capital letter as shown the example)
+	4. page_object_class_name [Tutorial_Main_Page]: [Main_Page] (Mention the same page object name but start with capital letter as shown the example)
 
 --------------------
 Known Issue(s)
