@@ -29,8 +29,10 @@ __Note:__ We recommand to use command prompt for running these commands (Avoid u
 1. Traverse to the directory where you want to create project, there are 2 ways to get the Qxf2 POM template
 	
 	1. Run the cookiecutter command, passing in the link to cookiecutter-pypackage’s HTTPS clone URL like this:
+	
 		`cookiecutter https://github.com/rohandudam/Qxf2_POM_Template_using_Cookiecutter.git`
 	2. Other approach would be to clone it to your local and run the cookiecutter below command
+	
 		`cookiecutter <path of the repo>`  (For example - cookiecutter c:/code/Qxf2_POM_Template_using_Cookiecutter)
 
 	__Note:__ The project Boilerplate will get created at the current directory path from where you are running the command.
